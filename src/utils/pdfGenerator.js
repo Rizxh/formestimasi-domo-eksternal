@@ -355,6 +355,18 @@ export async function generatePDF(data) {
   const drawY = boxY + (boxH - drawH) / 2;
   drawWatermarkGrid(doc, logo, logoW, logoH);
   doc.addImage(logo, 'PNG', drawX, drawY, drawW, drawH);
+
+  const badgeX = boxX + boxW + 3;
+  const badgeY = boxY + 3;
+  const badgeW = 28;
+  const badgeH = 5;
+  doc.setFillColor(37, 99, 235);
+  doc.roundedRect(badgeX, badgeY, badgeW, badgeH, 1, 1, 'F');
+  doc.setFont('helvetica', 'bold');
+  doc.setFontSize(6.5);
+  doc.setTextColor(255, 255, 255);
+  doc.text('CABANG EKSTERNAL', badgeX + badgeW / 2, badgeY + badgeH / 2 + 0.8, { align: 'center' });
+
   drawPage1Title(doc);
 
   const infoEndY = drawInfoSection(doc, data.header, 52);
