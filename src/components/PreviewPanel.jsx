@@ -103,28 +103,12 @@ function HeaderArea({ noEstimasiText, header }) {
 
   return (
     <>
-      <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+      <div>
         <img
           src="/logo-dokter-mobil-pasti-beres.png"
           alt="Dokter Mobil"
           style={{ width: 100, height: 'auto' }}
         />
-        <span
-          style={{
-            display: 'inline-block',
-            background: '#2563EB',
-            color: '#fff',
-            fontSize: '6.5pt',
-            fontWeight: 700,
-            fontFamily: 'Arial, sans-serif',
-            padding: '2px 8px',
-            borderRadius: 3,
-            letterSpacing: 0.5,
-            textTransform: 'uppercase',
-          }}
-        >
-          Cabang Eksternal
-        </span>
       </div>
       <div style={{ textAlign: 'center', marginTop: 18, marginBottom: 18 }}>
         <span

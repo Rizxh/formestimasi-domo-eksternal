@@ -56,7 +56,6 @@ function FormPanel({
       <div className="space-y-5 p-6">
         <header>
           <h1 className="text-lg font-bold text-white">Estimasi Harga - Dokter Mobil</h1>
-          <p className="mt-0.5 text-xs font-medium text-rose-400">Cabang Eksternal</p>
           <p className="mt-1 text-sm text-slate-400">
             Isi data pelanggan, pekerjaan, lalu download dokumen PDF.
           </p>
